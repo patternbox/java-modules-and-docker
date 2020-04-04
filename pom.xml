@@ -4,17 +4,19 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.patternbox.javamodules</groupId>
-  <artifactId>java-modules-env-vars-helper</artifactId>
+  <artifactId>env-vars-parent</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>11</maven.compiler.release>
   </properties>
 
-  <dependencies>
-
-  </dependencies>
+  <modules>
+    <module>env-vars-util</module>
+    <module>env-vars-app</module>
+  </modules>
 
   <build>
     <plugins>
