@@ -24,6 +24,19 @@ $ $JAVA_HOME/bin/jlink --no-header-files --no-man-pages --compress=2 --strip-deb
 ```bash
 # List Java modules
 $ jlink-out/bin/java --list-modules
+>   java.base@11.0.2
+>   java.logging@11.0.2
+>   patternbox.javamodules.app
+>   patternbox.javamodules.util
+```
+
+```bash
 # Run application
 $ jlink-out/bin/java --module patternbox.javamodules.app/com.patternbox.javamodules.app.EnvVarsApplication
+...
+JAVA_11_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home
+JAVA_8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home
+JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home
+JAVA_MAIN_CLASS_33280=com.patternbox.javamodules.app.EnvVarsApplication
+...
 ```
